@@ -11,7 +11,7 @@ const handleBlog = (req, res) => {
         if (req.isAuthenticated()) {
           res.render("../views/blog", { posts: posts });
         } else {
-          res.redirect("/login", {error: ""});
+          res.redirect("/login");
         }
       }
     }
