@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<div class="h-full w-full bg-zinc-50">
+    <div class="h-full flex flex-col gap-8 p-8">
+        <h1 class="font-bold"><%= title %></h1>
+        <h2 class="font-medium">Posted by: <%= author %></h2>
+        <p><%= content %></p>
+        <a class="p-2 w-48 bg-zinc-400 text-white rounded-lg shadow-lg text-center" href="/blog">Go back</a>
+      </div>
+</div>
+
+<%- include('partials/footer') %>

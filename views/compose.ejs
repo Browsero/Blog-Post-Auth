@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+
+<div class="w-full h-screen flex items-center">
+  <div
+    class="flex flex-col items-center justify-center mx-auto p-8 gap-8 bg-zinc-50 shadow-lg rounded-lg w-1/2"
+  >
+    <h1 class="text-5xl font-medium">Create post</h1>
+
+    <form
+      class="w-full flex flex-col gap-4 items-center w-full"
+      action="/compose"
+      method="POST"
+    >
+      <div class="flex flex-col gap-8 w-full">
+        <input
+          type="text"
+          class="form-control w-full"
+          name="title"
+          placeholder="Ttile"
+        />
+        <textarea
+          class="form-control w-full"
+          rows="10"
+          placeholder="Content..."
+          name="content"
+        ></textarea>
+      </div>
+      <div class="flex gap-4">
+        <button
+          type="submit"
+          class="text-center w-48 bg-zinc-700 text-white font-medium rounded-lg p-2"
+        >
+          Submit
+        </button>
+        <a
+          class="p-2 w-48 bg-zinc-400 text-white rounded-lg shadow-lg text-center"
+          href="/blog"
+          role="button"
+          >Back</a
+        >
+      </div>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer') %>

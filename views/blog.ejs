@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="flex flex-col gap-16">
+    <div class="w-full flex justify-end gap-4">
+      <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+      <a class="btn btn-dark btn-lg" href="/compose" role="button"
+        >Publish Post</a
+      >
+    </div>
+    <h1 class="display-3">Enjoy our best community articles!</h1>
+
+    <div class="flex flex-col gap-8">
+      <% posts.reverse().forEach(post=>{ %>
+      <div
+        class="bg-zinc-50 flex flex-col items-start max-w-5xl mx-auto p-8 gap-4 rounded-lg shadow-sm"
+      >
+        <h1 class="font-bold"><%= post.title %></h1>
+        <h2 class="font-medium">Author: <%= post.author %></h2>
+        <p class="text-left"><%= post.content.slice(0, 300) %><a href="<%= `posts/${post.title}` %>">...Read more</a></p>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
