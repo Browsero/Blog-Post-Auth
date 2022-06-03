@@ -2,6 +2,9 @@
 
 Node JS Express app, which allows user to authenticate via email & password, alternatively via Google. Authenticated user can publish own posts or browse existing ones.
 
+# Live Demo
+https://still-sea-92125.herokuapp.com/
+
 # Tech Stack
 <img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" /> <img width="50" height="50" src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" /> 
 
