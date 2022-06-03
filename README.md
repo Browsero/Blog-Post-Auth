@@ -25,14 +25,15 @@ SECRET_KEY - google auth secret key
 CALLBACK_URL - yoururl.domain/auth/google/callback
 ```
 
-To run this application use:
+To run this application in developemnt use:
+
+```bash
+npm run dev
+```
+
+To run this application in production use:
 
 ```bash
 npm start
 ```
 
-Or:
-
-```bash
-yarn start
-```
